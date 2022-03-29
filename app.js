@@ -1,8 +1,10 @@
 
 
 function changeBgColor(){
+    const inputField = document.getElementById('input-field');
     let bgColor = randomColorGenerate();
-    console.log(bgColor);
+    inputField.value = bgColor;
+    console.log(bgColor,inputField);
     document.getElementById('root').style.backgroundColor = bgColor;
 }
 
@@ -11,5 +13,5 @@ function randomColorGenerate(){
     let blue = Math.floor(Math.random() * 255);
     let green = Math.floor(Math.random() * 255);
 
-    return `rgb(${red},${blue},${green})`;
+    return `#${red.toString(16)}${blue.toString(16)}${green.toString(16)}`;
 }

@@ -17,11 +17,15 @@ body{
 .title{
     color: white;
 }
+input[type=text]{
+    padding: 5px;
+}
 button{
+    margin-top: 20px;
     background-color: black;
     color: white;
     border: 1px solid white;
-    padding: 10px 20px;
+    padding: 15px 30px;
     text-transform: uppercase;
     border-radius: 5px;
 }
